@@ -20,14 +20,14 @@ function ImageModal({ isOpen, onClose, image, title }: ImageModalProps) {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                className='fixed inset-0 bg-black/90 backdrop-blur-sm z-50 flex items-center justify-center'
+                className='fixed inset-0 bg-black/90 backdrop-blur-sm z-50 flex items-center justify-center p-4'
                 onClick={onClose}
             >
                 <motion.div
                     initial={{ scale: 0.95, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
                     exit={{ scale: 0.95, opacity: 0 }}
-                    className='relative max-w-[90vw] max-h-[90vh]'
+                    className='relative w-full max-w-[1200px] max-h-[80vh] bg-gray-900/50 rounded-2xl overflow-hidden'
                     onClick={(e) => e.stopPropagation()}
                 >
                     <Button
@@ -38,7 +38,9 @@ function ImageModal({ isOpen, onClose, image, title }: ImageModalProps) {
                     >
                         <X className='h-6 w-6' />
                     </Button>
-                    <img src={image} alt={title} className='w-full h-full object-contain rounded-lg' />
+                    <div className='w-full h-full flex items-center justify-center p-4'>
+                        <img src={image} alt={title} className='max-w-full max-h-[70vh] object-contain rounded-lg' />
+                    </div>
                 </motion.div>
             </motion.div>
         </AnimatePresence>

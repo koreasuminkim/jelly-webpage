@@ -3,6 +3,8 @@ import { Code2, Layout, Laptop, Smartphone } from "lucide-react";
 import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const services = [
     {
@@ -78,7 +80,7 @@ export default function ServicesSection() {
                         현실로 만들어드립니다
                     </p>
                 </div>
-                <div className='grid md:grid-cols-2 gap-8'>
+                <div className='grid md:grid-cols-2 gap-8 mb-16'>
                     {services.map((service, index) => (
                         <motion.div
                             key={service.title}
@@ -127,6 +129,22 @@ export default function ServicesSection() {
                         </motion.div>
                     ))}
                 </div>
+                <motion.div
+                    initial='hidden'
+                    animate={isInView ? "visible" : "hidden"}
+                    variants={variants}
+                    className='flex justify-center'
+                >
+                    <Link to='/portfolio' onClick={() => window.scrollTo(0, 0)}>
+                        <Button
+                            size='lg'
+                            variant='outline'
+                            className='bg-transparent border-blue-500 text-blue-500 hover:bg-blue-500/10 hover:text-blue-400 text-lg px-8'
+                        >
+                            포트폴리오 더 보기
+                        </Button>
+                    </Link>
+                </motion.div>
             </motion.div>
         </section>
     );

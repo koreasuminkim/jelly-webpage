@@ -87,7 +87,7 @@ export function TargetSection() {
                 </motion.div>
 
                 <div className='grid md:grid-cols-3 gap-8'>
-                    {targets.map((target, index) => (
+                    {targets.map((target) => (
                         <motion.div
                             key={target.title}
                             variants={itemVariants}

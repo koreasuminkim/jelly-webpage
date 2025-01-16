@@ -1,6 +1,5 @@
 import { Card } from "@/components/ui/card";
 import { Code2, Lightbulb, Rocket, Settings } from "lucide-react";
-import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
@@ -55,7 +54,8 @@ export default function ProcessSection() {
                 <div className='text-center mb-16'>
                     <h2 className='text-4xl font-bold mb-4 text-white font-display'>How We Work?</h2>
                     <p className='text-gray-400 text-lg'>
-                        체계적이고 효율적인 개발 프로세스로 <br className='md:hidden' />성공적인 프로젝트를 완성합니다
+                        체계적이고 효율적인 개발 프로세스로 <br className='md:hidden' />
+                        성공적인 프로젝트를 완성합니다
                     </p>
                 </div>
                 <div className='relative'>

@@ -1,6 +1,5 @@
 import { Card } from "@/components/ui/card";
 import { Code2, Layout, Laptop, Smartphone } from "lucide-react";
-import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Button } from "@/components/ui/button";

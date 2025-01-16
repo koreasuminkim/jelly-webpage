@@ -1,27 +1,103 @@
-import { Link } from "react-router-dom";
+import { Facebook, Github, Instagram, Linkedin, Mail, MapPin } from "lucide-react";
 
 export default function Footer() {
     return (
-        <footer className='w-full border-t border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60'>
-            <div className='container flex flex-col items-center justify-between gap-4 py-10 md:h-24 md:flex-row md:py-0'>
-                <div className='flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0'>
-                    <p className='text-center text-sm leading-loose text-muted-foreground md:text-left'>
-                        서울시 성동구 뚝섬로 13길 38 (성수동 2가)
-                    </p>
-                    <p className='text-center text-sm leading-loose text-muted-foreground md:text-left'>
-                        사업자 번호: 290-15-02231
-                    </p>
-                    <p className='text-center text-sm leading-loose text-muted-foreground md:text-left'>
-                        이메일: tachyon@boltlab.co
-                    </p>
+        <footer className='bg-gray-900 text-gray-300 py-16'>
+            <div className='container mx-auto px-4'>
+                <div className='grid grid-cols-1 md:grid-cols-4 gap-12'>
+                    <div>
+                        <h3 className='text-2xl font-bold text-white mb-6'>BOLTLAB</h3>
+                        <p className='text-gray-400 mb-6'>Premium IT Product Development Agency</p>
+                        <div className='flex space-x-4'>
+                            <a href='#' className='hover:text-blue-500 transition-colors'>
+                                <Facebook className='h-5 w-5' />
+                            </a>
+                            <a href='#' className='hover:text-blue-500 transition-colors'>
+                                <Instagram className='h-5 w-5' />
+                            </a>
+                            <a href='#' className='hover:text-blue-500 transition-colors'>
+                                <Github className='h-5 w-5' />
+                            </a>
+                            <a href='#' className='hover:text-blue-500 transition-colors'>
+                                <Linkedin className='h-5 w-5' />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 className='text-lg font-semibold text-white mb-4'>Services</h4>
+                        <ul className='space-y-2'>
+                            <li>
+                                <a href='#' className='hover:text-blue-500 transition-colors'>
+                                    Premium Website
+                                </a>
+                            </li>
+                            <li>
+                                <a href='#' className='hover:text-blue-500 transition-colors'>
+                                    Platform Development
+                                </a>
+                            </li>
+                            <li>
+                                <a href='#' className='hover:text-blue-500 transition-colors'>
+                                    AI Integration
+                                </a>
+                            </li>
+                            <li>
+                                <a href='#' className='hover:text-blue-500 transition-colors'>
+                                    Consulting
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 className='text-lg font-semibold text-white mb-4'>Company</h4>
+                        <ul className='space-y-2'>
+                            <li>
+                                <a href='#' className='hover:text-blue-500 transition-colors'>
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href='#' className='hover:text-blue-500 transition-colors'>
+                                    Portfolio
+                                </a>
+                            </li>
+                            <li>
+                                <a href='#' className='hover:text-blue-500 transition-colors'>
+                                    Blog
+                                </a>
+                            </li>
+                            <li>
+                                <a href='#' className='hover:text-blue-500 transition-colors'>
+                                    Careers
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 className='text-lg font-semibold text-white mb-4'>Contact</h4>
+                        <ul className='space-y-4'>
+                            <li className='flex items-center gap-2'>
+                                <MapPin className='h-5 w-5 text-blue-500' />
+                                <span>서울시 성동구 뚝섬로 13길 38 (성수동 2가)</span>
+                            </li>
+                            <li className='flex items-center gap-2'>
+                                <Mail className='h-5 w-5 text-blue-500' />
+                                <span>tachyon@boltlab.co</span>
+                            </li>
+                            <li className='flex items-center gap-2'>
+                                <span className='text-blue-500 font-medium'>사업자 번호:</span>
+                                <span>290-15-02231</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <p className='text-center text-sm leading-loose text-muted-foreground md:text-left'>
-                    Built by{" "}
-                    <Link to='/' className='font-medium underline underline-offset-4'>
-                        BoltLab
-                    </Link>
-                    . All rights reserved.
-                </p>
+
+                <div className='border-t border-gray-800 mt-12 pt-8 text-center text-gray-400'>
+                    <p>&copy; 2024 BOLTLAB. All rights reserved.</p>
+                </div>
             </div>
         </footer>
     );

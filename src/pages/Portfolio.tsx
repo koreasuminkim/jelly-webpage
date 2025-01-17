@@ -49,22 +49,6 @@ function ImageModal({ isOpen, onClose, image, title }: ImageModalProps) {
 
 const projects = [
     {
-        title: "Podcaster",
-        category: "웹앱 플랫폼",
-        image: "/portfolio/Podcaster.png",
-        description: "팟캐스트 플랫폼.\n음성 파일 업로드, 스트리밍,\n구독 및 결제 기능",
-        tags: ["React", "NestJS", "AWS", "FFmpeg"],
-        duration: "2개월",
-    },
-    {
-        title: "Reportable",
-        category: "웹앱 플랫폼",
-        image: "/portfolio/Reportable.png",
-        description: "리포트 자동화 플랫폼.\n데이터 시각화, 리포트 생성,\n공유 및 협업 기능",
-        tags: ["React", "NestJS", "Python", "AWS"],
-        duration: "3개월",
-    },
-    {
         title: "스터디타파",
         category: "하이브리드 앱 플랫폼",
         image: "/portfolio/스터디타파.png",
@@ -121,6 +105,22 @@ const projects = [
         tags: ["React", "NestJS", "AWS"],
         duration: "2개월",
     },
+    {
+      title: "Podcaster",
+      category: "웹앱 플랫폼",
+      image: "/portfolio/Podcaster.png",
+      description: "팟캐스트 플랫폼.\nAI 팟캐스트 생성, 스트리밍,\n구독 기능",
+      tags: ["React", "NestJS", "AWS", "OpenAI"],
+      duration: "1개월",
+  },
+  {
+      title: "Reportable",
+      category: "웹앱 플랫폼",
+      image: "/portfolio/Reportable.png",
+      description: "리포트 자동화 플랫폼.\n데이터 시각화, 리포트 생성,\n공유 및 협업 기능",
+      tags: ["React", "NestJS", "Python", "AWS"],
+      duration: "0.5개월",
+  },
     {
         title: "DeepSol",
         category: "웹앱 플랫폼",

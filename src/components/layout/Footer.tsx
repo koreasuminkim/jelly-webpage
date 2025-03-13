@@ -81,7 +81,7 @@ export default function Footer() {
                         <ul className='space-y-4'>
                             <li className='flex items-center gap-2'>
                                 <MapPin className='h-5 w-5 text-blue-500' />
-                                <span>서울시 성동구 뚝섬로 13길 38 (성수동 2가)</span>
+                                <span>서울시 강남구 테헤란로2길 27 패스트파이브 빌딩 1226호 </span>
                             </li>
                             <li className='flex items-center gap-2'>
                                 <Mail className='h-5 w-5 text-blue-500' />

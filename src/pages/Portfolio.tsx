@@ -3,6 +3,8 @@ import { ArrowLeft, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { SEO } from "@/components/SEO";
+import { pageSEO } from "@/lib/seo";
 
 interface ImageModalProps {
     isOpen: boolean;
@@ -174,8 +176,16 @@ const projects = [
 export default function Portfolio() {
     const [selectedImage, setSelectedImage] = useState<{ src: string; title: string } | null>(null);
 
+    const seoData = pageSEO({
+        title: "포트폴리오",
+        description: "볼트랩(BoltLab)이 제작한 다양한 웹 및 앱 프로젝트 포트폴리오를 소개합니다. 볼트랩의 웹 개발, 앱 개발, 디지털 마케팅 등 다양한 분야의 프로젝트를 확인하세요.",
+        keywords: "볼트랩 포트폴리오, BoltLab 포트폴리오, 볼트랩, 웹개발, 앱개발, 프로젝트, 사례, BoltLab, 소프트웨어 개발",
+        canonicalUrl: "https://boltlab.co.kr/portfolio"
+    });
+
     return (
         <div className='min-h-screen bg-black'>
+            <SEO seo={seoData} />
             <div className='container mx-auto px-4 py-12'>
                 <div className='mb-8'>
                     <Link to='/'>

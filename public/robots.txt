@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://boltlab.co.kr/sitemap.xml 

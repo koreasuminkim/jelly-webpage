@@ -64,7 +64,7 @@ type Achievement = {
 );
 
 export function HookSection() {
-    const { ref, isInView, isMobile } = useScrollAnimation();
+    const { ref, isInView } = useScrollAnimation();
 
     const containerVariants = {
         hidden: { opacity: 0 },

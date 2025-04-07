@@ -15,7 +15,7 @@ const teamMembers = [
         role: "PM & Designer",
         education: "서울대학교 시각디자인과",
         specs: ["네이버 프로덕트 디자인팀 출신", "B2B SaaS·협업툴 UX/UI 전문가", "외부 에이전시 PM 경력"],
-        description: "프로젝트 기획 및 관리",
+        description: "프로젝트 기획 및 디자인",
         image: "https://upload.wikimedia.org/wikipedia/ko/8/8d/%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90_%EB%A1%9C%EA%B3%A0.png?20161103100702",
     },
     {

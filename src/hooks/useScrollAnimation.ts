@@ -1,8 +1,24 @@
 import { useInView } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useEffect, useState } from "react";
 
 export const useScrollAnimation = (options = { once: false }) => {
     const ref = useRef(null);
+    const [isMobile, setIsMobile] = useState(false);
+    
+    // 모바일 디바이스 감지
+    useEffect(() => {
+        const checkIfMobile = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+        
+        checkIfMobile();
+        window.addEventListener('resize', checkIfMobile);
+        
+        return () => {
+            window.removeEventListener('resize', checkIfMobile);
+        };
+    }, []);
+    
     const isInView = useInView(ref, {
         once: options.once,
         margin: "0px 0px -100px 0px",
@@ -10,16 +26,16 @@ export const useScrollAnimation = (options = { once: false }) => {
     });
 
     const variants = {
-        hidden: { opacity: 0, y: 30 },
+        hidden: { opacity: isMobile ? 1 : 0, y: isMobile ? 0 : 30 },
         visible: {
             opacity: 1,
             y: 0,
             transition: {
-                duration: 0.6,
+                duration: isMobile ? 0 : 0.6,
                 ease: [0.25, 0.1, 0.25, 1],
             },
         },
     };
 
-    return { ref, isInView, variants };
+    return { ref, isInView, variants, isMobile };
 };

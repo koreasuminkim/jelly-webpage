@@ -21,10 +21,10 @@ export default function Home() {
             <SEO seo={seoData} />
             <HeroSection />
             <HookSection />
-            <ServicesSection />
-            <TargetSection />
             <ProcessSection />
             <TeamSection />
+            <TargetSection />
+            <ServicesSection />
             <CTASection />
         </div>
     );

@@ -3,7 +3,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Building2, Rocket, Users } from "lucide-react";
 
 export function TargetSection() {
-    const { ref, isInView } = useScrollAnimation();
+    const { ref, isInView, isMobile } = useScrollAnimation();
 
     const containerVariants = {
         hidden: { opacity: 0 },
@@ -33,13 +33,14 @@ export function TargetSection() {
                 damping: 12,
                 stiffness: 100,
                 duration: 1,
+                delay: isMobile ? 0 : undefined,
             },
         },
     };
 
     const targets = [
         {
-            icon: <Rocket className='h-12 w-12 text-blue-500' />,
+            icon: <Rocket className='h-8 w-8 md:h-12 md:w-12 text-blue-500' />,
             title: "스타트업",
             description: "MVP 개발부터 스케일업까지, 빠른 성장을 원하는 스타트업",
             features: [
@@ -51,14 +52,14 @@ export function TargetSection() {
             image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80&w=2000&h=1000",
         },
         {
-            icon: <Building2 className='h-12 w-12 text-blue-500' />,
+            icon: <Building2 className='h-8 w-8 md:h-12 md:w-12 text-blue-500' />,
             title: "중소/중견기업",
             description: "신사업 프로젝트 아웃소싱이 필요한 성장기업",
             features: ["신규 사업 개발 프로젝트", "전문 개발팀 아웃소싱", "기술 검증 및 도입", "프로젝트 기간 준수"],
             image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2000&h=1000",
         },
         {
-            icon: <Users className='h-12 w-12 text-blue-500' />,
+            icon: <Users className='h-8 w-8 md:h-12 md:w-12 text-blue-500' />,
             title: "협업 파트너사",
             description: "클라이언트를 위한 프리미엄 IT 솔루션이 필요한 에이전시",
             features: [
@@ -72,7 +73,7 @@ export function TargetSection() {
     ];
 
     return (
-        <section id='target' className='py-32 bg-black relative overflow-hidden'>
+        <section id='target' className='py-32 bg-black relative overflow-hidden mobile-section'>
             <div className='absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.1),transparent_70%)]' />
             <motion.div
                 ref={ref}
@@ -81,42 +82,42 @@ export function TargetSection() {
                 variants={containerVariants}
                 className='container mx-auto px-4 relative'
             >
-                <motion.div variants={itemVariants} className='text-center mb-16'>
-                    <h2 className='text-4xl font-bold mb-4 text-white font-display'>Who We Serve?</h2>
-                    <p className='text-gray-400 text-lg'>AgentForce와 함께 성장할 파트너를 찾습니다</p>
+                <motion.div variants={itemVariants} className='text-center mb-10 md:mb-16'>
+                    <h2 className='text-2xl md:text-4xl font-bold mb-2 md:mb-4 text-white font-display mobile-heading'>Who We Serve?</h2>
+                    <p className='text-gray-400 text-sm md:text-lg mobile-text'>AgentForce와 함께 성장할 파트너를 찾습니다</p>
                 </motion.div>
 
-                <div className='grid md:grid-cols-3 gap-8'>
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mobile-grid'>
                     {targets.map((target) => (
                         <motion.div
                             key={target.title}
                             variants={itemVariants}
-                            className='group relative bg-gray-900/50 rounded-2xl overflow-hidden hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-500 transform hover:-translate-y-2'
+                            className='group relative bg-gray-900/50 rounded-2xl overflow-hidden hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-500 transform hover:-translate-y-2 mobile-card'
                         >
-                            <div className='relative h-48 overflow-hidden'>
+                            <div className='relative h-32 md:h-48 overflow-hidden'>
                                 <div className='absolute inset-0 bg-gradient-to-b from-transparent to-black/80' />
                                 <img
                                     src={target.image}
                                     alt={target.title}
                                     className='w-full h-full object-cover group-hover:scale-110 transition-transform duration-700'
                                 />
-                                <div className='absolute bottom-4 left-4 flex items-center gap-3'>
-                                    <div className='p-2 rounded-lg bg-blue-500/20 backdrop-blur-sm group-hover:bg-blue-500/30 transition-colors duration-300'>
+                                <div className='absolute bottom-2 md:bottom-4 left-2 md:left-4 flex items-center gap-2 md:gap-3'>
+                                    <div className='p-1 md:p-2 rounded-lg bg-blue-500/20 backdrop-blur-sm group-hover:bg-blue-500/30 transition-colors duration-300'>
                                         {target.icon}
                                     </div>
-                                    <h3 className='text-2xl font-bold text-white'>{target.title}</h3>
+                                    <h3 className='text-lg md:text-2xl font-bold text-white'>{target.title}</h3>
                                 </div>
                             </div>
 
-                            <div className='p-6'>
-                                <p className='text-gray-300 mb-6'>{target.description}</p>
-                                <ul className='space-y-3'>
+                            <div className='p-3 md:p-6'>
+                                <p className='text-gray-300 text-xs md:text-base mb-2 md:mb-6 break-keep'>{target.description}</p>
+                                <ul className='space-y-1 md:space-y-3 mobile-list'>
                                     {target.features.map((feature, fIndex) => (
                                         <li
                                             key={fIndex}
-                                            className='text-gray-400 flex items-center gap-2 group-hover:text-gray-300 transition-colors'
+                                            className='text-gray-400 flex items-center gap-1 md:gap-2 group-hover:text-gray-300 transition-colors text-xs md:text-base mobile-list-item'
                                         >
-                                            <div className='h-1.5 w-1.5 rounded-full bg-blue-500' />
+                                            <div className='h-1 w-1 md:h-1.5 md:w-1.5 rounded-full bg-blue-500' />
                                             {feature}
                                         </li>
                                     ))}

@@ -64,6 +64,144 @@
     }
 }
 
+/* 모바일 가독성 개선을 위한 스타일 */
+@media (max-width: 768px) {
+    section {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem !important;
+        line-height: 1.2 !important;
+        margin-bottom: 0.5rem !important;
+    }
+    
+    p {
+        font-size: 0.85rem !important;
+        line-height: 1.4 !important;
+    }
+    
+    .container {
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+    }
+    
+    .grid {
+        gap: 0.75rem !important;
+    }
+    
+    .card {
+        padding: 0.75rem !important;
+    }
+    
+    .mb-16 {
+        margin-bottom: 2rem !important;
+    }
+    
+    .py-32, .py-24 {
+        padding-top: 2.5rem !important;
+        padding-bottom: 2.5rem !important;
+    }
+    
+    /* 모바일에서 카드 요소들 간 간격 조정 */
+    .service-card, .team-card, .hook-item {
+        margin-bottom: 0.5rem !important;
+    }
+    
+    /* 모바일에서 텍스트 정렬 개선 */
+    .text-center p {
+        max-width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
+    
+    /* 컨텐츠 여백 최적화 */
+    .mobile-card {
+        margin-bottom: 0.5rem !important;
+        box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.06) !important;
+        border-radius: 0.5rem !important;
+        padding: 0.5rem !important;
+        height: 100% !important;
+    }
+    
+    .mobile-card-content {
+        padding: 0.5rem !important;
+    }
+    
+    .mobile-heading {
+        font-size: 1.5rem !important;
+        line-height: 1.2 !important;
+        margin-bottom: 0.5rem !important;
+    }
+    
+    .mobile-text {
+        font-size: 0.75rem !important;
+        line-height: 1.3 !important;
+        margin-bottom: 0.5rem !important;
+    }
+    
+    .mobile-grid {
+        gap: 0.5rem !important;
+    }
+    
+    .mobile-list {
+        margin-top: 0.5rem !important;
+    }
+    
+    .mobile-list-item {
+        margin-bottom: 0.25rem !important;
+        font-size: 0.7rem !important;
+    }
+    
+    /* 섹션 간격 추가 */
+    .mobile-section {
+        margin-bottom: 0.5rem !important;
+    }
+    
+    /* 섹션 사이에 구분선 추가 */
+    section + section {
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    
+    /* 팀 섹션 카드 최적화 */
+    .team-card .card {
+        padding: 0.5rem !important;
+    }
+    
+    .team-card img {
+        max-width: 100% !important;
+    }
+    
+    /* 홀수 카드 최적화 */
+    .mobile-card-inner {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    
+    /* 텍스트 줄바꿈 최적화 */
+    .break-keep {
+        word-break: keep-all !important;
+        overflow-wrap: break-word !important;
+    }
+    
+    /* Hook 섹션 첫 번째 카드 최적화 */
+    @media (min-width: 640px) and (max-width: 767px) {
+        .col-span-1.sm\:col-span-2 .mobile-card-inner {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .col-span-1.sm\:col-span-2 .mobile-card-inner > div:first-child {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
 .font-display {
     font-family: "Sora", sans-serif;
     font-weight: 600;

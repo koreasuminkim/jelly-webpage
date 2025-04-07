@@ -51,6 +51,42 @@ function ImageModal({ isOpen, onClose, image, title }: ImageModalProps) {
 
 const projects = [
     {
+        title: "무코",
+        category: "대형 커뮤니티 사이트",
+        image: "/portfolio/muko.png",
+        description: "국내 영화 커뮤니티 사이트.\n커뮤니티, 이벤트, 쪽지, 출석, 공지 등\n MAU 약 30만",
+        tags: ["NextJS", "NestJS", "AWS", "ECS", "Docker"],
+        duration: "3개월",
+        url: "https://muko.kr"
+    },
+    {
+        title: "자동차 평가 관리 시스템",
+        category: "내부 시스템",
+        image: "/portfolio/ctscompany.png",
+        description: "자동차 사고 수리 평가 내부 시스템.\n어드민 평가사 관리, 평가 관리, 평가 입력, 출퇴근 시스템",
+        tags: ["NextJS", "NestJS", "AWS"],
+        duration: "2개월",
+        url: ""
+    },
+    {
+        title: "피터펫",
+        category: "홈페이지",
+        image: "/portfolio/peterpet.png",
+        description: "펫카페 홈페이지.\n홈페이지, 예약관리, 관리자 CMS 시스템",
+        tags: ["NextJS", "NestJS", "AWS"],
+        duration: "1개월",
+        url: "https://peterpet.net"
+    },
+    {
+        title: "블루클럽 창업",
+        category: "홈페이지",
+        image: "/portfolio/blueclub.png",
+        description: "블루클럽 창업 홈페이지.\n랜딩페이지",
+        tags: ["NextJS", "Vercel"],
+        duration: "0.5개월",
+        url: "https://blueclub-changup.com"
+    },
+    {
         title: "스터디타파",
         category: "하이브리드 앱 플랫폼",
         image: "/portfolio/스터디타파.png",
@@ -58,6 +94,7 @@ const projects = [
             "CPA/CTA 전문직 수험생을 위한 플랫폼.\n커뮤니티, 채팅, 멘토링, 스터디그룹,\n강의평, 알림 등 통합 기능 제공",
         tags: ["React Native", "NestJS", "AWS"],
         duration: "4개월",
+        url: "https://play.google.com/store/apps/details?id=com.irurilabs.studytapa&hl=ko"
     },
     {
         title: "MyQuark",
@@ -66,6 +103,7 @@ const projects = [
         description: "수학 문제 은행 및 AI 기반 디지털 변환 플랫폼.\n문제은행 클라우드 구축,\nPDF to HWP 시스템 구축",
         tags: ["NextJS", "NestJS", "Python", "FastAPI", "TensorFlow"],
         duration: "2개월",
+        url: "https://get.myquark.app"
     },
     {
         title: "Choonsim",
@@ -74,6 +112,7 @@ const projects = [
         description: "암호화폐 거래 플랫폼.\n실시간 가격 조회, 거래,\n차트 조회 기능",
         tags: ["React", "Vite", "NestJS"],
         duration: "0.5개월",
+        url: "https://www.choonsim.com/"
     },
     {
         title: "Koso",
@@ -82,6 +121,7 @@ const projects = [
         description: "이커머스 파우더 마켓 웹 플랫폼",
         tags: ["React", "Vite", "NestJS", "MongoDB"],
         duration: "1개월",
+        url: "https://kosohada.com"
     },
     {
         title: "Eden",
@@ -90,6 +130,7 @@ const projects = [
         description: "버츄얼 유튜버를 위한\n아바타 마켓플레이스",
         tags: ["React", "NestJS", "AWS"],
         duration: "1개월",
+        url: "https://eden-world.net/"
     },
     {
         title: "DutyFree Price",
@@ -98,6 +139,7 @@ const projects = [
         description: "면세점 상품 크롤링\n가격비교 서비스",
         tags: ["React", "NestJS", "Python"],
         duration: "3개월",
+        url: "https://dutyfree-price.com/"
     },
     {
         title: "Apex",
@@ -106,6 +148,7 @@ const projects = [
         description: "영어 학습 자료 판매 플랫폼",
         tags: ["React", "NestJS", "AWS"],
         duration: "2개월",
+        url: "https://a-pex.co.kr/"
     },
     {
       title: "Podcaster",
@@ -114,15 +157,17 @@ const projects = [
       description: "팟캐스트 플랫폼.\nAI 팟캐스트 생성, 스트리밍,\n구독 기능",
       tags: ["React", "NestJS", "AWS", "OpenAI"],
       duration: "1개월",
-  },
-  {
+      url: "https://podcaster.boltlab.co/"
+    },
+    {
       title: "Reportable",
       category: "웹앱 플랫폼",
       image: "/portfolio/Reportable.png",
       description: "리포트 자동화 플랫폼.\n데이터 시각화, 리포트 생성,\n공유 및 협업 기능",
       tags: ["React", "NestJS", "Python", "AWS"],
       duration: "0.5개월",
-  },
+      url: "https://reportable.xyz"
+    },
     {
         title: "DeepSol",
         category: "웹앱 플랫폼",
@@ -130,6 +175,7 @@ const projects = [
         description: "수학 문제 풀이 QNA 플랫폼.\n추론 모델 기반 수학 문제 풀이 시스템",
         tags: ["Python", "React", "NestJS"],
         duration: "1개월",
+        url: "https://deepsol.kr"
     },
     {
         title: "Outta",
@@ -138,6 +184,7 @@ const projects = [
         description: "인공지능 단체 소개 페이지",
         tags: ["React", "Node.js"],
         duration: "0.2개월",
+        url: "https://outta.ai"
     },
     {
         title: "OneEighty",
@@ -146,6 +193,7 @@ const projects = [
         description: "소개팅 서비스 웹사이트",
         tags: ["React", "Vite"],
         duration: "0.1개월",
+        url: "https://oneeighty.boltlab.co"
     },
     {
         title: "Bridge Marketing",
@@ -154,6 +202,7 @@ const projects = [
         description: "마케팅 에이전시 랜딩페이지",
         tags: ["React", "Vite"],
         duration: "0.1개월",
+        url: "https://bridgemarketing.xyz/"
     },
     {
         title: "Heartsolo",
@@ -162,6 +211,7 @@ const projects = [
         description: "스키장 강습 + 파티 상품 판매 페이지",
         tags: ["React", "Vite"],
         duration: "0.1개월",
+        url: "https://heartsolo.com"
     },
     {
         title: "Designation",
@@ -170,6 +220,7 @@ const projects = [
         description: "디자인 에이전시 랜딩페이지",
         tags: ["React", "Vite"],
         duration: "0.1개월",
+        url: ""
     },
 ];
 
@@ -177,10 +228,10 @@ export default function Portfolio() {
     const [selectedImage, setSelectedImage] = useState<{ src: string; title: string } | null>(null);
 
     const seoData = pageSEO({
-        title: "포트폴리오",
-        description: "볼트랩(BoltLab)이 제작한 다양한 웹 및 앱 프로젝트 포트폴리오를 소개합니다. 볼트랩의 웹 개발, 앱 개발, 디지털 마케팅 등 다양한 분야의 프로젝트를 확인하세요.",
-        keywords: "볼트랩 포트폴리오, BoltLab 포트폴리오, 볼트랩, 웹개발, 앱개발, 프로젝트, 사례, BoltLab, 소프트웨어 개발",
-        canonicalUrl: "https://boltlab.co.kr/portfolio"
+        title: "볼트랩(BoltLab) 포트폴리오",
+        description: "볼트랩(BoltLab)이 제작한 다양한 웹 및 앱 프로젝트 포트폴리오를 소개합니다. BoltLab의 웹 개발, 앱 개발, 디지털 마케팅 등 다양한 분야의 프로젝트를 확인하세요.",
+        keywords: "볼트랩 포트폴리오, BoltLab 포트폴리오, 볼트 랩 프로젝트, BoltLab 프로젝트, 볼트랩 개발 사례, BoltLab 개발 사례, 볼트랩, BoltLab, 웹개발, 앱개발, 프로젝트, 사례",
+        canonicalUrl: "https://boltlab.co/portfolio"
     });
 
     return (
@@ -199,9 +250,9 @@ export default function Portfolio() {
                     </Link>
                 </div>
 
-                <h1 className='text-4xl md:text-5xl font-bold mb-6 text-white font-display'>Our Portfolio</h1>
+                <h1 className='text-4xl md:text-5xl font-bold mb-6 text-white font-display'>볼트랩(BoltLab) 포트폴리오</h1>
                 <p className='text-xl text-gray-400 mb-12 max-w-2xl'>
-                    BoltLab이 만든 포트폴리오들을 소개합니다. <br />
+                    볼트랩(BoltLab)이 만든 포트폴리오들을 소개합니다. <br />
                     각 프로젝트는 고객의 비즈니스를 성장시키고 있습니다.
                     <br />
                     포트폴리오는 현시점에도 늘어나고 있습니다.
@@ -244,6 +295,30 @@ export default function Portfolio() {
                                         </span>
                                     ))}
                                 </div>
+                                {project.url ? (
+                                    <div className='mt-4'>
+                                        <a 
+                                            href={project.url} 
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                            className='inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-md text-white text-sm transition-colors'
+                                        >
+                                            <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                            </svg>
+                                            사이트 바로가기
+                                        </a>
+                                    </div>
+                                ) : (
+                                    <div className='mt-4'>
+                                        <span className='inline-flex items-center px-4 py-2 bg-gray-700 cursor-default rounded-md text-gray-300 text-sm'>
+                                            <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                                            </svg>
+                                            비공개 프로젝트
+                                        </span>
+                                    </div>
+                                )}
                             </div>
                         </div>
                     ))}

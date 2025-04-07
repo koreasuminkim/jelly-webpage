@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://boltlab.co.kr/</loc>
-    <lastmod>2023-12-01</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://boltlab.co/</loc>
+    <lastmod>2023-12-15</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://boltlab.co.kr/portfolio</loc>
-    <lastmod>2023-12-01</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://boltlab.co/portfolio</loc>
+    <lastmod>2023-12-15</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 </urlset> 

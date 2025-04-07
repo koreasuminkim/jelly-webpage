@@ -1,9 +1,6 @@
 import { Facebook, Github, Instagram, Linkedin, Mail, MapPin } from "lucide-react";
-import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 export default function Footer() {
-    const { isMobile } = useScrollAnimation();
-    
     return (
         <footer className='bg-gray-900 text-gray-300 py-8 md:py-16'>
             <div className='container mx-auto px-4'>

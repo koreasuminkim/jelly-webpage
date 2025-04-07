@@ -54,7 +54,7 @@ const projects = [
         title: "무코",
         category: "대형 커뮤니티 사이트",
         image: "/portfolio/muko.png",
-        description: "국내 영화 커뮤니티 사이트.\n커뮤니티, 이벤트, 쪽지, 출석, 공지 등\n MAU 약 30만",
+        description: "국내 영화 커뮤니티 사이트.\n커뮤니티, 이벤트, 쪽지, 출석, 공지 등\nMAU 약 30만",
         tags: ["NextJS", "NestJS", "AWS", "ECS", "Docker"],
         duration: "3개월",
         url: "https://muko.kr"

@@ -49,7 +49,7 @@ export default function HeroSection() {
                                 <br className='md:hidden' /> 최고의 가격에.
                                 <br />
                                 신세대 IT 개발 에이전시
-                                <br className='md:hidden' /> 볼트랩
+                                <br className='md:hidden' /> 젤리
                             </p>
                             <div className='flex justify-center items-center mb-6 hero-text'>
                                 <img src='/logo/boltlab-logo-blue.svg' alt='BOLTLAB' className='h-14 w-auto' />
@@ -91,7 +91,7 @@ export default function HeroSection() {
                                 <br className='md:hidden' /> 최고의 가격에.
                                 <br />
                                 신세대 IT 개발 에이전시
-                                <br className='md:hidden' /> 볼트랩
+                                <br className='md:hidden' /> 젤리
                             </p>
                             <div className='flex justify-center items-center mb-6 hero-text'>
                                 <img src='/logo/boltlab-logo-blue.svg' alt='BOLTLAB' className='h-14 w-auto' />

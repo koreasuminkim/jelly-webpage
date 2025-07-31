@@ -6,13 +6,13 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 const teamMembers = [
     {
         role: "Director",
-        education: "서울대학교 전기정보공학부",
-        specs: ["AI 특허 보유", "BoltLab Agent 개발", "풀스택 엔지니어"],
+        education: "서울대학교 경영학과",
+        specs: ["창업 경험 보유", "스타트업 PM 경력", "실전경영학회 이수"],
         description: "프로젝트 관리 총괄",
         image: "https://upload.wikimedia.org/wikipedia/ko/8/8d/%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90_%EB%A1%9C%EA%B3%A0.png?20161103100702",
     },
     {
-        role: "PM & Designer",
+        role: "Designer&PM",
         education: "서울대학교 시각디자인과",
         specs: ["네이버 프로덕트 디자인팀 출신", "B2B SaaS·협업툴 UX/UI 전문가", "외부 에이전시 PM 경력"],
         description: "프로젝트 기획 및 디자인",
@@ -32,13 +32,19 @@ const teamMembers = [
         description: "인프라 및 성능 최적화 총괄",
         image: "https://upload.wikimedia.org/wikipedia/ko/8/8d/%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90_%EB%A1%9C%EA%B3%A0.png?20161103100702",
     },
-    {
-        role: "AI Lead",
-        education: "서울대학교 AI 대학원",
-        specs: ["LLM 연구 전문가", "AI 논문 다수 보유", "MLOps 아키텍트"],
-        description: "AI 모델 개발 총괄",
-        image: "https://upload.wikimedia.org/wikipedia/ko/8/8d/%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90_%EB%A1%9C%EA%B3%A0.png?20161103100702",
+    { role: "App Developer",
+            education: "컬럼비아대학교 컴퓨터공학과",
+            specs: ["앱 개발 전문가", "풀스택 엔지니어", "스타트업 Tech Lead 경력"],
+            description: "앱 개발 총괄",
+            image: "https://i.namu.wiki/i/bPxF-sXEZs47wYIjZtVoWH6pqV4wX7oj6SKWQcNpOOrGCiKL9KpcpHN6zFmSKjyV_rTAQ8-1lSO4SF0HX5YJAQ.svg",
     },
+    // {
+    //     role: "AI Lead",
+    //     education: "서울대학교 AI 대학원",
+    //     specs: ["LLM 연구 전문가", "AI 논문 다수 보유", "MLOps 아키텍트"],
+    //     description: "AI 모델 개발 총괄",
+    //     image: "https://upload.wikimedia.org/wikipedia/ko/8/8d/%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90_%EB%A1%9C%EA%B3%A0.png?20161103100702",
+    // },
 ];
 
 export default function TeamSection() {

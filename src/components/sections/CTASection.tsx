@@ -37,7 +37,7 @@ export default function CTASection() {
                             Ready to Start?
                         </h2>
                         <p className='text-xl text-gray-300 mb-12 leading-relaxed'>
-                            볼트랩과 함께라면 <br className='md:hidden' />
+                            젤리과 함께라면 <br className='md:hidden' />
                             당신의 아이디어가 현실이 됩니다.
                             <br />
                             지금 바로 무료 컨설팅을 받아보세요.

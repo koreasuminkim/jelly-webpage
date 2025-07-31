@@ -228,9 +228,9 @@ export default function Portfolio() {
     const [selectedImage, setSelectedImage] = useState<{ src: string; title: string } | null>(null);
 
     const seoData = pageSEO({
-        title: "볼트랩(BoltLab) 포트폴리오",
-        description: "볼트랩(BoltLab)이 제작한 다양한 웹 및 앱 프로젝트 포트폴리오를 소개합니다. BoltLab의 웹 개발, 앱 개발, 디지털 마케팅 등 다양한 분야의 프로젝트를 확인하세요.",
-        keywords: "볼트랩 포트폴리오, BoltLab 포트폴리오, 볼트 랩 프로젝트, BoltLab 프로젝트, 볼트랩 개발 사례, BoltLab 개발 사례, 볼트랩, BoltLab, 웹개발, 앱개발, 프로젝트, 사례",
+        title: "젤리(Jelly) 포트폴리오",
+        description: "젤리(Jelly)이 제작한 다양한 웹 및 앱 프로젝트 포트폴리오를 소개합니다. Jelly의 웹 개발, 앱 개발, 디지털 마케팅 등 다양한 분야의 프로젝트를 확인하세요.",
+        keywords: "젤리 포트폴리오, Jelly 포트폴리오, 볼트 랩 프로젝트, Jelly 프로젝트, 젤리 개발 사례, Jelly 개발 사례, 젤리, Jelly, 웹개발, 앱개발, 프로젝트, 사례",
         canonicalUrl: "https://boltlab.co/portfolio"
     });
 
@@ -250,9 +250,9 @@ export default function Portfolio() {
                     </Link>
                 </div>
 
-                <h1 className='text-4xl md:text-5xl font-bold mb-6 text-white font-display'>볼트랩(BoltLab) 포트폴리오</h1>
+                <h1 className='text-4xl md:text-5xl font-bold mb-6 text-white font-display'>젤리(Jelly) 포트폴리오</h1>
                 <p className='text-xl text-gray-400 mb-12 max-w-2xl'>
-                    볼트랩(BoltLab)이 만든 포트폴리오들을 소개합니다. <br />
+                    젤리(Jelly)이 만든 포트폴리오들을 소개합니다. <br />
                     각 프로젝트는 고객의 비즈니스를 성장시키고 있습니다.
                     <br />
                     포트폴리오는 현시점에도 늘어나고 있습니다.

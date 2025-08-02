@@ -1,1 +1,1 @@
-# boltlab-landing
+# jelly-landing

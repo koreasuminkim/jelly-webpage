@@ -13,7 +13,7 @@ export const defaultSEO: SEOProps = {
   keywords: "젤리, Jelly, 볼트 랩, 젤리 개발, Jelly 개발, 웹개발, 앱개발, 디지털 마케팅, 소프트웨어 개발, 기술 컨설팅",
   ogType: "website",
   ogImage: "/public/images/boltlab-og-image.jpg",
-  canonicalUrl: "https://boltlab.co"
+  canonicalUrl: "https://teamjelly.co.kr"
 };
 
 export const getPageTitle = (pageTitle?: string): string => {

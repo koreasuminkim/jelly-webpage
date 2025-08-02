@@ -8,7 +8,7 @@ export default defineConfig({
     plugins: [
         react(),
         Sitemap({ 
-            hostname: "https://boltlab.co",
+            hostname: "https://teamjelly.co.kr",
             dynamicRoutes: ["/", "/portfolio"]
         })
     ],

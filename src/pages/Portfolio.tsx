@@ -231,7 +231,7 @@ export default function Portfolio() {
         title: "젤리(Jelly) 포트폴리오",
         description: "젤리(Jelly)이 제작한 다양한 웹 및 앱 프로젝트 포트폴리오를 소개합니다. Jelly의 웹 개발, 앱 개발, 디지털 마케팅 등 다양한 분야의 프로젝트를 확인하세요.",
         keywords: "젤리 포트폴리오, Jelly 포트폴리오, 볼트 랩 프로젝트, Jelly 프로젝트, 젤리 개발 사례, Jelly 개발 사례, 젤리, Jelly, 웹개발, 앱개발, 프로젝트, 사례",
-        canonicalUrl: "https://boltlab.co/portfolio"
+        canonicalUrl: "https://teamjelly.co.kr/portfolio"
     });
 
     return (

@@ -18,7 +18,7 @@ export default function CTASection() {
     };
 
     const handleModalConfirm = () => {
-        window.location.href = "http://pf.kakao.com/_gymTn/chat";
+        window.location.href = "http://pf.kakao.com/_nWcxen";
     };
 
     return (

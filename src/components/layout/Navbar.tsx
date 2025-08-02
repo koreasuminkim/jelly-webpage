@@ -18,7 +18,7 @@ export function Navbar() {
     };
 
     const handleModalConfirm = () => {
-        window.location.href = "http://pf.kakao.com/_gymTn/chat";
+        window.location.href = "http://pf.kakao.com/_nWcxen";
     };
 
     const scrollToSection = (sectionId: string) => {

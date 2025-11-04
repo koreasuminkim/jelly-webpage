@@ -27,7 +27,7 @@ export function ContactModal({ isOpen, onClose, onConfirm }: ContactModalProps) 
                     onClick={(e) => e.stopPropagation()}
                 >
                     <h3 className='text-2xl font-bold text-white mb-2'>카카오 채널로 연결</h3>
-                    <p className='text-gray-400 mb-6'>젤리 카카오 채널로 이동하여 상담을 시작하시겠습니까?</p>
+                    <p className='text-gray-400 mb-6'>볼트랩 카카오 채널로 이동하여 상담을 시작하시겠습니까?</p>
                     <div className='flex gap-3'>
                         <Button
                             className='flex-1 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white rounded-xl'

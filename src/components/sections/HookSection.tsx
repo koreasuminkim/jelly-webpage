@@ -107,7 +107,7 @@ export function HookSection() {
                     <span>자체 개발 자동화 시스템</span>
                 </span>
             ),
-            description: "젤리는 AI의 기술 발전을\n그대로 외주 비용에 녹여냈습니다",
+            description: "볼트랩은 AI의 기술 발전을\n그대로 외주 비용에 녹여냈습니다",
             stat: {
                 value: 300,
                 unit: "%",

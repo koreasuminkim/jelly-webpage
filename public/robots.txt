@@ -1,4 +1,4 @@
-# robots.txt for 젤리(Jelly)
+# robots.txt for 볼트랩
 User-agent: *
 Allow: /
 

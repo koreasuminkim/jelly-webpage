@@ -17,10 +17,6 @@ export default function CTASection() {
         setIsModalOpen(false);
     };
 
-    const handleModalConfirm = () => {
-        window.location.href = "http://pf.kakao.com/_nWcxen";
-    };
-
     return (
         <>
             <section className='py-32 bg-black relative overflow-hidden'>
@@ -55,7 +51,7 @@ export default function CTASection() {
                     </div>
                 </motion.div>
             </section>
-            <ContactModal isOpen={isModalOpen} onClose={handleModalClose} onConfirm={handleModalConfirm} />
+            <ContactModal isOpen={isModalOpen} onClose={handleModalClose} />
         </>
     );
 }

@@ -17,10 +17,6 @@ export default function HeroSection() {
         setIsModalOpen(false);
     };
 
-    const handleModalConfirm = () => {
-        window.location.href = "http://pf.kakao.com/_nWcxen";
-    };
-
     return (
         <>
             <section className='relative min-h-screen flex items-center pt-20'>
@@ -110,7 +106,7 @@ export default function HeroSection() {
                     </motion.div>
                 )}
             </section>
-            <ContactModal isOpen={isModalOpen} onClose={handleModalClose} onConfirm={handleModalConfirm} />
+            <ContactModal isOpen={isModalOpen} onClose={handleModalClose} />
         </>
     );
 }

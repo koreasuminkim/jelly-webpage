@@ -17,10 +17,6 @@ export function Navbar() {
         setIsModalOpen(false);
     };
 
-    const handleModalConfirm = () => {
-        window.location.href = "http://pf.kakao.com/_nWcxen";
-    };
-
     const scrollToSection = (sectionId: string) => {
         const element = document.getElementById(sectionId);
         if (element) {
@@ -115,7 +111,7 @@ export function Navbar() {
                     </div>
                 </div>
             </nav>
-            <ContactModal isOpen={isModalOpen} onClose={handleModalClose} onConfirm={handleModalConfirm} />
+            <ContactModal isOpen={isModalOpen} onClose={handleModalClose} />
         </>
     );
 }

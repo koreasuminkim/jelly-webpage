@@ -164,6 +164,12 @@ export function HookSection() {
         },
     ];
 
+    const isHidden = true;
+
+    if (isHidden) {
+        return null;
+    }
+
     return (
         <section id='hook' className='py-24 bg-black relative overflow-hidden mobile-section'>
             <div className='absolute inset-0 bg-gradient-to-br from-blue-600/10 via-purple-600/10 to-transparent' />

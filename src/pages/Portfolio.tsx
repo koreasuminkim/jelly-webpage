@@ -51,6 +51,16 @@ function ImageModal({ isOpen, onClose, image, title }: ImageModalProps) {
 
 const projects = [
     {
+        title: "위픽업",
+        category: "광고상품 판매 플랫폼",
+        image: "/portfolio/wepickup.png",
+        description: "광고상품 판매 플랫폼.\nAI를 활용한 상품 크롤링\n연매출 100억 기업",
+        tags: ["NextJS", "NestJS",  "MariaDB", "OpenAI", "LangChain", "Firecrawl"],
+        duration: "4개월",
+        url: "https://up.wepick.kr/"
+    },
+
+    {
         title: "무코",
         category: "대형 커뮤니티 사이트",
         image: "/portfolio/muko.png",
@@ -92,7 +102,7 @@ const projects = [
         image: "/portfolio/스터디타파.png",
         description:
             "CPA/CTA 전문직 수험생을 위한 플랫폼.\n커뮤니티, 채팅, 멘토링, 스터디그룹,\n강의평, 알림 등 통합 기능 제공",
-        tags: ["React Native", "NestJS", "AWS"],
+        tags: ["React Native", "NestJS", "AWS", "Oracle"],
         duration: "4개월",
         url: "https://play.google.com/store/apps/details?id=com.irurilabs.studytapa&hl=ko"
     },
@@ -110,7 +120,7 @@ const projects = [
         category: "웹앱 플랫폼",
         image: "/portfolio/choonsim.png",
         description: "암호화폐 거래 플랫폼.\n실시간 가격 조회, 거래,\n차트 조회 기능",
-        tags: ["React", "Vite", "NestJS"],
+        tags: ["React", "Vite", "NestJS", "PostgreSQL"],
         duration: "0.5개월",
         url: "https://www.choonsim.com/"
     },

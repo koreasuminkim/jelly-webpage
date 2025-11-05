@@ -4,10 +4,9 @@ import { motion, AnimatePresence } from "framer-motion";
 interface ContactModalProps {
     isOpen: boolean;
     onClose: () => void;
-    onConfirm: () => void;
 }
 
-export function ContactModal({ isOpen, onClose, onConfirm }: ContactModalProps) {
+export function ContactModal({ isOpen, onClose }: ContactModalProps) {
     if (!isOpen) return null;
 
     return (
@@ -26,21 +25,14 @@ export function ContactModal({ isOpen, onClose, onConfirm }: ContactModalProps) 
                     className='bg-gray-900 border border-gray-800 rounded-2xl p-6 max-w-md w-full mx-4 shadow-xl'
                     onClick={(e) => e.stopPropagation()}
                 >
-                    <h3 className='text-2xl font-bold text-white mb-2'>카카오 채널로 연결</h3>
-                    <p className='text-gray-400 mb-6'>볼트랩 카카오 채널로 이동하여 상담을 시작하시겠습니까?</p>
-                    <div className='flex gap-3'>
+                    <h3 className='text-2xl font-bold text-white mb-4'>문의 안내</h3>
+                    <p className='text-gray-300 mb-8'>크몽을 통해 문의한 고객은 직접 연락이 불가합니다. 크몽 상담창을 이용해 주세요.</p>
+                    <div className='flex justify-end'>
                         <Button
-                            className='flex-1 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white rounded-xl'
-                            onClick={onConfirm}
-                        >
-                            계속하기
-                        </Button>
-                        <Button
-                            variant='outline'
-                            className='flex-1 border-gray-700 text-gray-400 hover:text-white hover:border-gray-600 rounded-xl'
+                            className='px-6 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white rounded-xl'
                             onClick={onClose}
                         >
-                            취소
+                            확인
                         </Button>
                     </div>
                 </motion.div>

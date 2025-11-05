@@ -52,9 +52,9 @@ function ImageModal({ isOpen, onClose, image, title }: ImageModalProps) {
 const projects = [
     {
         title: "위픽업",
-        category: "광고상품 판매 플랫폼",
+        category: "광고상품마켓",
         image: "/portfolio/wepickup.png",
-        description: "광고상품 판매 플랫폼.\nAI를 활용한 상품 크롤링\n연매출 100억 기업",
+        description: "광고상품마켓.\nAI를 활용한 광고상품 크롤링 자동화\n연매출 100억 기업",
         tags: ["NextJS", "NestJS",  "MariaDB", "OpenAI", "LangChain", "Firecrawl"],
         duration: "4개월",
         url: "https://up.wepick.kr/"

@@ -6,7 +6,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 const teamMembers = [
     {
         role: "Director & PM",
-        education: "서울대학교 경영학과",
+        education: "서울대학교 전기정보공학부",
         specs: ["창업 경험 보유", "스타트업 대표 경력", "풀스택 개발자"],
         description: "프로젝트 관리 총괄",
         image: "https://upload.wikimedia.org/wikipedia/ko/8/8d/%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90_%EB%A1%9C%EA%B3%A0.png?20161103100702",

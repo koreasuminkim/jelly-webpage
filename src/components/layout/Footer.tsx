@@ -85,11 +85,11 @@ export default function Footer() {
                             </li>
                             <li className='flex items-center gap-1 md:gap-2'>
                                 <Mail className='h-4 w-4 md:h-5 md:w-5 text-blue-500 shrink-0' />
-                                <span>비공개</span>
+                                <span>tachyon@boltlab.co</span>
                             </li>
                             <li className='flex items-center gap-1 md:gap-2'>
                                 <span className='text-blue-500 font-medium'>사업자 번호:</span>
-                                <span>333-14-02467</span>
+                                <span>290-15-02231</span>
                             </li>
                         </ul>
                     </div>

@@ -81,15 +81,15 @@ export default function Footer() {
                         <ul className='space-y-2 md:space-y-4 text-xs md:text-base'>
                             <li className='flex items-start md:items-center gap-1 md:gap-2'>
                                 <MapPin className='h-4 w-4 md:h-5 md:w-5 text-blue-500 mt-0.5 md:mt-0 shrink-0' />
-                                <span>서울시 동작구 상도로55길 8,챌린지스테이션 2층 </span>
+                                <span>서울시 동작구 상도로55길 8, 2층 </span>
                             </li>
                             <li className='flex items-center gap-1 md:gap-2'>
                                 <Mail className='h-4 w-4 md:h-5 md:w-5 text-blue-500 shrink-0' />
-                                <span>tachyon@boltlab.co</span>
+                                <span>suminjs@snu.ac.kr</span>
                             </li>
                             <li className='flex items-center gap-1 md:gap-2'>
                                 <span className='text-blue-500 font-medium'>사업자 번호:</span>
-                                <span>290-15-02231</span>
+                                <span>333-14-02467</span>
                             </li>
                         </ul>
                     </div>

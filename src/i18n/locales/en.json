@@ -1,4 +1,16 @@
 {
+  "seo": {
+    "home": {
+      "title": "Boltlab | Home",
+      "description": "Boltlab - Innovative web development and digital solutions provider. Boltlab supports your business's digital transformation with cutting-edge technology. We provide website development, app development, and digital marketing services.",
+      "keywords": "Boltlab, web development, app development, digital marketing, software development, technology consulting, IT agency, startup development"
+    },
+    "portfolio": {
+      "title": "Boltlab Portfolio",
+      "description": "Introducing various web and app project portfolios created by Boltlab. Check out projects across various fields including web development, app development, and digital marketing.",
+      "keywords": "Boltlab portfolio, Boltlab projects, web development cases, app development cases, Boltlab, projects, case studies"
+    }
+  },
   "hero": {
     "badge": "Built by SNU Engineers",
     "title": "Best Product,\nBest Price",

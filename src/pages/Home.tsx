@@ -7,12 +7,15 @@ import TeamSection from "@/components/sections/TeamSection";
 import CTASection from "@/components/sections/CTASection";
 import { SEO } from "@/components/SEO";
 import { pageSEO } from "@/lib/seo";
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
+    const { t } = useTranslation();
+    
     const seoData = pageSEO({
-        title: "볼트랩(Boltlab) | 홈",
-        description: "볼트랩(Boltlab) - 혁신적인 웹 개발 및 디지털 솔루션 제공업체. Boltlabs는 최신 기술로 비즈니스의 디지털 전환을 지원합니다. 웹사이트 개발, 앱 개발, 디지털 마케팅 서비스를 제공합니다.",
-        keywords: "볼트랩, Boltlab, 볼트 랩, 볼트랩 홈페이지, Boltlab 홈페이지, 볼트랩 개발, Boltlab 개발, 웹개발, 앱개발, 디지털 마케팅, 소프트웨어 개발, 기술 컨설팅",
+        title: t('seo.home.title'),
+        description: t('seo.home.description'),
+        keywords: t('seo.home.keywords'),
         canonicalUrl: "https://boltlab.co.kr/"
     });
 

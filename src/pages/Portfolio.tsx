@@ -234,10 +234,10 @@ export default function Portfolio() {
     });
 
     const seoData = pageSEO({
-        title: "볼트랩 포트폴리오",
-        description: "볼트랩이 제작한 다양한 웹 및 앱 프로젝트 포트폴리오를 소개합니다. Boltlab의 웹 개발, 앱 개발, 디지털 마케팅 등 다양한 분야의 프로젝트를 확인하세요.",
-        keywords: "볼트랩 포트폴리오, Boltlab 포트폴리오, 볼트 랩 프로젝트, Boltlab 프로젝트, 볼트랩 개발 사례, Boltlab 개발 사례, 볼트랩, Boltlab, 웹개발, 앱개발, 프로젝트, 사례",
-        canonicalUrl: "https://teamBoltlab.co.kr/portfolio"
+        title: t('seo.portfolio.title'),
+        description: t('seo.portfolio.description'),
+        keywords: t('seo.portfolio.keywords'),
+        canonicalUrl: "https://boltlab.co.kr/portfolio"
     });
 
     return (

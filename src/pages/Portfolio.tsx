@@ -222,11 +222,14 @@ export default function Portfolio() {
 
     const projects = projectKeys.map((key) => {
         const data = projectData[key as keyof typeof projectData];
-        const projectInfo = t(`portfolio.projects.${key}`, { returnObjects: true }) as { category: string; description: string };
+        const projectInfo = t(`portfolio.projects.${key}`, { returnObjects: true });
+        const info = typeof projectInfo === 'object' && projectInfo !== null 
+            ? projectInfo as { category: string; description: string }
+            : { category: 'homepage', description: '' };
         return {
             ...data,
-            category: t(`portfolio.categories.${projectInfo.category}`),
-            description: projectInfo.description,
+            category: t(`portfolio.categories.${info.category}`) || info.category,
+            description: info.description || '',
         };
     });
 

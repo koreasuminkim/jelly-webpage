@@ -4,16 +4,6 @@ import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { useTranslation } from "react-i18next";
 
-const memberKeys = [
-    "director",
-    "techLead",
-    "backend",
-    "appDeveloper1",
-    "designer",
-    "appDeveloper2",
-    "aiLead",
-];
-
 const memberImages = [
     "https://upload.wikimedia.org/wikipedia/ko/8/8d/%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90_%EB%A1%9C%EA%B3%A0.png?20161103100702",
     "https://upload.wikimedia.org/wikipedia/ko/8/8d/%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90_%EB%A1%9C%EA%B3%A0.png?20161103100702",
@@ -24,22 +14,24 @@ const memberImages = [
     "https://upload.wikimedia.org/wikipedia/ko/8/8d/%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90_%EB%A1%9C%EA%B3%A0.png?20161103100702",
 ];
 
+interface TeamMember {
+    role: string;
+    education: string;
+    specs: string[];
+    description: string;
+}
+
 export default function TeamSection() {
     const { t } = useTranslation();
-    
-    const teamMembers = memberKeys.map((key, index) => {
-        const memberData = t(`team.members.${key}`, { returnObjects: true }) as {
-            role: string;
-            education: string;
-            specs: string[];
-            description: string;
-        };
-        return {
-            ...memberData,
-            image: memberImages[index],
-        };
-    });
     const { ref, isInView, variants, isMobile } = useScrollAnimation();
+    
+    const membersData = t('team.members', { returnObjects: true }) as TeamMember[] | string;
+    const teamMembers = Array.isArray(membersData) 
+        ? (membersData as TeamMember[]).map((member, index) => ({
+            ...member,
+            image: memberImages[index] || '',
+        }))
+        : [];
     const itemVariants = {
         hidden: { opacity: 0, scale: 0.9 },
         visible: (i: number) => ({

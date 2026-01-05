@@ -12,8 +12,10 @@ export function Navbar() {
     const [activeSection, setActiveSection] = useState("");
     const [isModalOpen, setIsModalOpen] = useState(false);
 
+    const currentLang = i18n.language?.startsWith('ko') ? 'ko' : (i18n.language?.startsWith('en') ? 'en' : 'ko');
+    
     const toggleLanguage = () => {
-        const newLang = i18n.language === 'ko' ? 'en' : 'ko';
+        const newLang = currentLang === 'ko' ? 'en' : 'ko';
         i18n.changeLanguage(newLang);
     };
 
@@ -113,10 +115,10 @@ export function Navbar() {
                                 <button
                                     onClick={toggleLanguage}
                                     className='text-gray-300 hover:text-white transition-colors flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-gray-800/50'
-                                    title={i18n.language === 'ko' ? 'Switch to English' : '한국어로 전환'}
+                                    title={currentLang === 'ko' ? 'Switch to English' : '한국어로 전환'}
                                 >
                                     <Globe className='h-4 w-4' />
-                                    <span className='text-sm font-medium'>{i18n.language === 'ko' ? 'EN' : '한'}</span>
+                                    <span className='text-sm font-medium'>{currentLang === 'ko' ? 'EN' : '한'}</span>
                                 </button>
                                 <Button
                                     className='bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-base px-6 py-4 rounded-xl shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 transition-all duration-300'

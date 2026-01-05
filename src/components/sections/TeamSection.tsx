@@ -4,59 +4,41 @@ import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { useTranslation } from "react-i18next";
 
-const teamMembers = [
-    {
-        role: "Director & PM",
-        education: "서울대학교 경영학과",
-        specs: ["창업 경험", "스타트업 대표 경력", "프론트엔드 개발자"],
-        description: "프로젝트 관리 총괄",
-        image: "https://upload.wikimedia.org/wikipedia/ko/8/8d/%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90_%EB%A1%9C%EA%B3%A0.png?20161103100702",
-    },
-    {
-        role: "Tech Lead",
-        education: "서울대학교 수리과학과",
-        specs: ["스타트업 리드 개발자", "풀스택 엔지니어", "시스템 아키텍처 설계"],
-        description: "개발 & 기술 스택 총괄",
-        image: "https://upload.wikimedia.org/wikipedia/ko/8/8d/%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90_%EB%A1%9C%EA%B3%A0.png?20161103100702",
-    },
-    {
-        role: "Backend Developer",
-        education: "서울대학교 전기정보공학과",
-        specs: ["알고리즘 최적화 전문가", "Kubernetes 아키텍트"],
-        description: "인프라 및 성능 최적화 총괄",
-        image: "https://upload.wikimedia.org/wikipedia/ko/8/8d/%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90_%EB%A1%9C%EA%B3%A0.png?20161103100702",
-    },
-    { role: "App Developer",
-            education: "컬럼비아대학교 컴퓨터공학과",
-            specs: ["앱 개발 전문가", "풀스택 엔지니어", "스타트업 Tech Lead 경력"],
-            description: "풀스택 개발자",
-            image: "/logo/columbia-logo.png",
-    },
-    {
-        role: "Designer",
-        education: "워싱턴대학교 심리학과",
-        specs: ["B2B SaaS·협업툴 UX/UI 전문가", "외부 에이전시 PM 경력"],
-        description: "프로젝트 기획 및 디자인",
-        image: "/logo/washington.svg",
-    },
-    {
-        role: "App Developer",
-        education: "서울대학교 컴퓨터공학부",
-        specs: ["앱 개발 전문가", "Flutter 엔지니어", "CSS 최적화"],
-        description: "앱 개발 총괄",
-        image: "https://upload.wikimedia.org/wikipedia/ko/8/8d/%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90_%EB%A1%9C%EA%B3%A0.png?20161103100702",
-    },
-    {
-        role: "AI Lead",
-        education: "서울대학교 AI 대학원",
-        specs: ["LLM 연구 전문가", "AI 논문 다수 보유", "MLOps 아키텍트"],
-        description: "AI 모델 개발 총괄",
-        image: "https://upload.wikimedia.org/wikipedia/ko/8/8d/%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90_%EB%A1%9C%EA%B3%A0.png?20161103100702",
-    },
+const memberKeys = [
+    "director",
+    "techLead",
+    "backend",
+    "appDeveloper1",
+    "designer",
+    "appDeveloper2",
+    "aiLead",
+];
+
+const memberImages = [
+    "https://upload.wikimedia.org/wikipedia/ko/8/8d/%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90_%EB%A1%9C%EA%B3%A0.png?20161103100702",
+    "https://upload.wikimedia.org/wikipedia/ko/8/8d/%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90_%EB%A1%9C%EA%B3%A0.png?20161103100702",
+    "https://upload.wikimedia.org/wikipedia/ko/8/8d/%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90_%EB%A1%9C%EA%B3%A0.png?20161103100702",
+    "/logo/columbia-logo.png",
+    "/logo/washington.svg",
+    "https://upload.wikimedia.org/wikipedia/ko/8/8d/%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90_%EB%A1%9C%EA%B3%A0.png?20161103100702",
+    "https://upload.wikimedia.org/wikipedia/ko/8/8d/%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90_%EB%A1%9C%EA%B3%A0.png?20161103100702",
 ];
 
 export default function TeamSection() {
     const { t } = useTranslation();
+    
+    const teamMembers = memberKeys.map((key, index) => {
+        const memberData = t(`team.members.${key}`, { returnObjects: true }) as {
+            role: string;
+            education: string;
+            specs: string[];
+            description: string;
+        };
+        return {
+            ...memberData,
+            image: memberImages[index],
+        };
+    });
     const { ref, isInView, variants, isMobile } = useScrollAnimation();
     const itemVariants = {
         hidden: { opacity: 0, scale: 0.9 },

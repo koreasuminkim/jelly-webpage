@@ -3,13 +3,19 @@ import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { ContactModal } from "@/components/ui/contact-modal";
 import { useTranslation } from "react-i18next";
+import { Globe } from "lucide-react";
 
 export function Navbar() {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     const location = useLocation();
     const isHomePage = location.pathname === "/";
     const [activeSection, setActiveSection] = useState("");
     const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const toggleLanguage = () => {
+        const newLang = i18n.language === 'ko' ? 'en' : 'ko';
+        i18n.changeLanguage(newLang);
+    };
 
     const handleContactClick = () => {
         setIsModalOpen(true);
@@ -103,12 +109,22 @@ export function Navbar() {
                                     {t('navbar.portfolio')}
                                 </Link>
                             </div>
-                            <Button
-                                className='bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-base px-6 py-4 rounded-xl shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 transition-all duration-300'
-                                onClick={handleContactClick}
-                            >
-                                {t('navbar.contact')}
-                            </Button>
+                            <div className='flex items-center gap-4'>
+                                <button
+                                    onClick={toggleLanguage}
+                                    className='text-gray-300 hover:text-white transition-colors flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-gray-800/50'
+                                    title={i18n.language === 'ko' ? 'Switch to English' : '한국어로 전환'}
+                                >
+                                    <Globe className='h-4 w-4' />
+                                    <span className='text-sm font-medium'>{i18n.language === 'ko' ? 'EN' : '한'}</span>
+                                </button>
+                                <Button
+                                    className='bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-base px-6 py-4 rounded-xl shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 transition-all duration-300'
+                                    onClick={handleContactClick}
+                                >
+                                    {t('navbar.contact')}
+                                </Button>
+                            </div>
                         </div>
                     </div>
                 </div>

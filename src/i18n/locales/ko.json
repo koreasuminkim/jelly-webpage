@@ -95,7 +95,51 @@
   },
   "team": {
     "title": "Why Trust Us?",
-    "subtitle": "대한민국 최고 수준의 개발 역량을 보유한\n최고의 전문가들이 함께합니다"
+    "subtitle": "대한민국 최고 수준의 개발 역량을 보유한\n최고의 전문가들이 함께합니다",
+    "members": {
+      "director": {
+        "role": "Director & PM",
+        "education": "서울대학교 경영학과",
+        "specs": ["창업 경험", "스타트업 대표 경력", "프론트엔드 개발자"],
+        "description": "프로젝트 관리 총괄"
+      },
+      "techLead": {
+        "role": "Tech Lead",
+        "education": "서울대학교 수리과학과",
+        "specs": ["스타트업 리드 개발자", "풀스택 엔지니어", "시스템 아키텍처 설계"],
+        "description": "개발 & 기술 스택 총괄"
+      },
+      "backend": {
+        "role": "Backend Developer",
+        "education": "서울대학교 전기정보공학과",
+        "specs": ["알고리즘 최적화 전문가", "Kubernetes 아키텍트"],
+        "description": "인프라 및 성능 최적화 총괄"
+      },
+      "appDeveloper1": {
+        "role": "App Developer",
+        "education": "컬럼비아대학교 컴퓨터공학과",
+        "specs": ["앱 개발 전문가", "풀스택 엔지니어", "스타트업 Tech Lead 경력"],
+        "description": "풀스택 개발자"
+      },
+      "designer": {
+        "role": "Designer",
+        "education": "워싱턴대학교 심리학과",
+        "specs": ["B2B SaaS·협업툴 UX/UI 전문가", "외부 에이전시 PM 경력"],
+        "description": "프로젝트 기획 및 디자인"
+      },
+      "appDeveloper2": {
+        "role": "App Developer",
+        "education": "서울대학교 컴퓨터공학부",
+        "specs": ["앱 개발 전문가", "Flutter 엔지니어", "CSS 최적화"],
+        "description": "앱 개발 총괄"
+      },
+      "aiLead": {
+        "role": "AI Lead",
+        "education": "서울대학교 AI 대학원",
+        "specs": ["LLM 연구 전문가", "AI 논문 다수 보유", "MLOps 아키텍트"],
+        "description": "AI 모델 개발 총괄"
+      }
+    }
   },
   "hook": {
     "title": "AI 시대의 개발 비용",

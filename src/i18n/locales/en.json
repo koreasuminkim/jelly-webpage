@@ -95,7 +95,51 @@
   },
   "team": {
     "title": "Why Trust Us?",
-    "subtitle": "Top experts with the highest level of\ndevelopment capabilities in Korea work together"
+    "subtitle": "Top experts with the highest level of\ndevelopment capabilities in Korea work together",
+    "members": {
+      "director": {
+        "role": "Director & PM",
+        "education": "Seoul National University, Business Administration",
+        "specs": ["Startup Experience", "Startup CEO Experience", "Frontend Developer"],
+        "description": "Project Management"
+      },
+      "techLead": {
+        "role": "Tech Lead",
+        "education": "Seoul National University, Mathematical Sciences",
+        "specs": ["Startup Lead Developer", "Full-stack Engineer", "System Architecture Design"],
+        "description": "Development & Technology Stack"
+      },
+      "backend": {
+        "role": "Backend Developer",
+        "education": "Seoul National University, Electrical and Computer Engineering",
+        "specs": ["Algorithm Optimization Expert", "Kubernetes Architect"],
+        "description": "Infrastructure & Performance Optimization"
+      },
+      "appDeveloper1": {
+        "role": "App Developer",
+        "education": "Columbia University, Computer Science",
+        "specs": ["App Development Expert", "Full-stack Engineer", "Startup Tech Lead Experience"],
+        "description": "Full-stack Developer"
+      },
+      "designer": {
+        "role": "Designer",
+        "education": "University of Washington, Psychology",
+        "specs": ["B2B SaaS & Collaboration Tool UX/UI Expert", "External Agency PM Experience"],
+        "description": "Project Planning & Design"
+      },
+      "appDeveloper2": {
+        "role": "App Developer",
+        "education": "Seoul National University, Computer Science",
+        "specs": ["App Development Expert", "Flutter Engineer", "CSS Optimization"],
+        "description": "App Development"
+      },
+      "aiLead": {
+        "role": "AI Lead",
+        "education": "Seoul National University, AI Graduate School",
+        "specs": ["LLM Research Expert", "Multiple AI Papers", "MLOps Architect"],
+        "description": "AI Model Development"
+      }
+    }
   },
   "hook": {
     "title": "Development Costs in the AI Era",

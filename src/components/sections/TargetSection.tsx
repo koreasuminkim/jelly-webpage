@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Building2, Rocket, Users } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export function TargetSection() {
+    const { t } = useTranslation();
     const { ref, isInView, isMobile } = useScrollAnimation();
 
     const containerVariants = {
@@ -41,32 +43,37 @@ export function TargetSection() {
     const targets = [
         {
             icon: <Rocket className='h-8 w-8 md:h-12 md:w-12 text-blue-500' />,
-            title: "스타트업",
-            description: "MVP 개발부터 스케일업까지, 빠른 성장을 원하는 스타트업",
+            title: t('target.items.startup.title'),
+            description: t('target.items.startup.description'),
             features: [
-                "빠른 MVP 개발 필요",
-                "기술 스택 선정 고민",
-                "제한된 개발 리소스",
-                "시장 검증이 필요한 아이디어",
+                t('target.items.startup.features.0'),
+                t('target.items.startup.features.1'),
+                t('target.items.startup.features.2'),
+                t('target.items.startup.features.3'),
             ],
             image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80&w=2000&h=1000",
         },
         {
             icon: <Building2 className='h-8 w-8 md:h-12 md:w-12 text-blue-500' />,
-            title: "중소/중견기업",
-            description: "신사업 프로젝트 아웃소싱이 필요한 성장기업",
-            features: ["신규 사업 개발 프로젝트", "전문 개발팀 아웃소싱", "기술 검증 및 도입", "프로젝트 기간 준수"],
+            title: t('target.items.enterprise.title'),
+            description: t('target.items.enterprise.description'),
+            features: [
+                t('target.items.enterprise.features.0'),
+                t('target.items.enterprise.features.1'),
+                t('target.items.enterprise.features.2'),
+                t('target.items.enterprise.features.3'),
+            ],
             image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2000&h=1000",
         },
         {
             icon: <Users className='h-8 w-8 md:h-12 md:w-12 text-blue-500' />,
-            title: "협업 파트너사",
-            description: "클라이언트를 위한 프리미엄 IT 솔루션이 필요한 에이전시",
+            title: t('target.items.partner.title'),
+            description: t('target.items.partner.description'),
             features: [
-                "프리미엄 IT 개발 협업",
-                "클라이언트 프로젝트 수주",
-                "안정적인 기술 파트너십",
-                "원스톱 솔루션 제공",
+                t('target.items.partner.features.0'),
+                t('target.items.partner.features.1'),
+                t('target.items.partner.features.2'),
+                t('target.items.partner.features.3'),
             ],
             image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=2000&h=1000",
         },
@@ -83,8 +90,8 @@ export function TargetSection() {
                 className='container mx-auto px-4 relative'
             >
                 <motion.div variants={itemVariants} className='text-center mb-10 md:mb-16'>
-                    <h2 className='text-2xl md:text-4xl font-bold mb-2 md:mb-4 text-white font-display mobile-heading'>Who We Serve?</h2>
-                    <p className='text-gray-400 text-sm md:text-lg mobile-text'>AgentForce와 함께 성장할 파트너를 찾습니다</p>
+                    <h2 className='text-2xl md:text-4xl font-bold mb-2 md:mb-4 text-white font-display mobile-heading'>{t('target.title')}</h2>
+                    <p className='text-gray-400 text-sm md:text-lg mobile-text'>{t('target.subtitle')}</p>
                 </motion.div>
 
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mobile-grid'>

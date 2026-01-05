@@ -2,6 +2,7 @@ import { motion, useInView } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Bot, Zap, Sparkles } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 function CountUp({ end, duration = 2000, className = "" }: { end: number; duration?: number; className?: string }) {
     const [count, setCount] = useState(0);
@@ -64,6 +65,7 @@ type Achievement = {
 );
 
 export function HookSection() {
+    const { t } = useTranslation();
     const { ref, isInView } = useScrollAnimation();
 
     const containerVariants = {
@@ -102,16 +104,16 @@ export function HookSection() {
             title: (
                 <span className='flex items-center gap-2'>
                     <span className='bg-gradient-to-r from-blue-400 via-blue-500 to-purple-500 bg-clip-text text-transparent text-3xl'>
-                        AI
+                        {t('hook.achievements.ai.titlePrefix')}
                     </span>
-                    <span>자체 개발 자동화 시스템</span>
+                    <span>{t('hook.achievements.ai.titleSuffix')}</span>
                 </span>
             ),
-            description: "볼트랩은 AI의 기술 발전을\n그대로 외주 비용에 녹여냈습니다",
+            description: t('hook.achievements.ai.description'),
             stat: {
                 value: 300,
-                unit: "%",
-                label: "개발 효율 증가",
+                unit: t('hook.achievements.ai.stat.unit'),
+                label: t('hook.achievements.ai.stat.label'),
             },
         },
         {
@@ -119,22 +121,22 @@ export function HookSection() {
             title: (
                 <span className='flex items-center gap-1'>
                     <span className='bg-gradient-to-r from-blue-400 via-blue-500 to-purple-500 bg-clip-text text-transparent text-3xl'>
-                        3
+                        {t('hook.achievements.speed.titlePrefix')}
                     </span>
-                    <span>배 빠른 개발</span>
+                    <span>{t('hook.achievements.speed.titleSuffix')}</span>
                 </span>
             ),
-            description: "웹/모바일 앱, AI 솔루션 등\n다양한 분야의 프로젝트 수행",
+            description: t('hook.achievements.speed.description'),
             stats: [
                 {
                     value: 50,
-                    unit: "+",
-                    label: "프로젝트 완수",
+                    unit: t('hook.achievements.speed.stats.0.unit'),
+                    label: t('hook.achievements.speed.stats.0.label'),
                 },
                 {
                     value: 1.5,
-                    unit: "개월",
-                    label: "평균 개발기간",
+                    unit: t('hook.achievements.speed.stats.1.unit'),
+                    label: t('hook.achievements.speed.stats.1.label'),
                 },
             ],
         },
@@ -143,22 +145,22 @@ export function HookSection() {
             title: (
                 <span className='flex items-center gap-1'>
                     <span className='bg-gradient-to-r from-blue-400 via-blue-500 to-purple-500 bg-clip-text text-transparent text-3xl'>
-                        3
+                        {t('hook.achievements.cost.titlePrefix')}
                     </span>
-                    <span>배 저렴한 비용</span>
+                    <span>{t('hook.achievements.cost.titleSuffix')}</span>
                 </span>
             ),
-            description: "높은 품질과 합리적인 비용으로\n고객 만족 실현",
+            description: t('hook.achievements.cost.description'),
             stats: [
                 {
                     value: 98,
-                    unit: "%",
-                    label: "고객 만족도",
+                    unit: t('hook.achievements.cost.stats.0.unit'),
+                    label: t('hook.achievements.cost.stats.0.label'),
                 },
                 {
                     value: 85,
-                    unit: "%",
-                    label: "재계약률",
+                    unit: t('hook.achievements.cost.stats.1.unit'),
+                    label: t('hook.achievements.cost.stats.1.label'),
                 },
             ],
         },
@@ -183,10 +185,10 @@ export function HookSection() {
                 <motion.div variants={itemVariants} className='max-w-4xl mx-auto text-center mb-12 md:mb-16'>
                     <h2 className='font-display mobile-heading'>
                         <span className='block text-2xl md:text-4xl font-bold mb-2 md:mb-4 text-white tracking-tight'>
-                            AI 시대의 개발 비용
+                            {t('hook.title')}
                         </span>
                         <span className='block text-2xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 via-blue-500 to-purple-500 bg-clip-text text-transparent tracking-tight'>
-                            이제는 달라져야 합니다
+                            {t('hook.subtitle')}
                         </span>
                     </h2>
                 </motion.div>

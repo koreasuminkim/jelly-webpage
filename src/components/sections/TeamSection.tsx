@@ -2,6 +2,7 @@ import { Card } from "@/components/ui/card";
 import { Avatar } from "@/components/ui/avatar";
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { useTranslation } from "react-i18next";
 
 const teamMembers = [
     {
@@ -28,7 +29,7 @@ const teamMembers = [
     { role: "App Developer",
             education: "컬럼비아대학교 컴퓨터공학과",
             specs: ["앱 개발 전문가", "풀스택 엔지니어", "스타트업 Tech Lead 경력"],
-            description: "앱 개발 총괄",
+            description: "풀스택 개발자",
             image: "/logo/columbia-logo.png",
     },
     {
@@ -42,7 +43,7 @@ const teamMembers = [
         role: "App Developer",
         education: "서울대학교 컴퓨터공학부",
         specs: ["앱 개발 전문가", "Flutter 엔지니어", "CSS 최적화"],
-        description: "AI 모델 개발 총괄",
+        description: "앱 개발 총괄",
         image: "https://upload.wikimedia.org/wikipedia/ko/8/8d/%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90_%EB%A1%9C%EA%B3%A0.png?20161103100702",
     },
     {
@@ -55,6 +56,7 @@ const teamMembers = [
 ];
 
 export default function TeamSection() {
+    const { t } = useTranslation();
     const { ref, isInView, variants, isMobile } = useScrollAnimation();
     const itemVariants = {
         hidden: { opacity: 0, scale: 0.9 },
@@ -80,10 +82,9 @@ export default function TeamSection() {
                 className='container mx-auto px-4 relative'
             >
                 <div className='text-center mb-10 md:mb-16'>
-                    <h2 className='text-2xl md:text-4xl font-bold mb-2 md:mb-4 text-white font-display mobile-heading'>Why Trust Us?</h2>
-                    <p className='text-gray-400 text-sm md:text-base mobile-text'>
-                        대한민국 최고 수준의 개발 역량을 보유한 <br className='md:hidden' />
-                        최고의 전문가들이 함께합니다
+                    <h2 className='text-2xl md:text-4xl font-bold mb-2 md:mb-4 text-white font-display mobile-heading'>{t('team.title')}</h2>
+                    <p className='text-gray-400 text-sm md:text-base mobile-text whitespace-pre-line'>
+                        {t('team.subtitle')}
                     </p>
                 </div>
                 <div className='grid grid-cols-2 md:grid-cols-5 gap-2 md:gap-8 max-w-7xl mx-auto mobile-grid'>

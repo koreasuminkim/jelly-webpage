@@ -4,8 +4,10 @@ import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { ContactModal } from "@/components/ui/contact-modal";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function CTASection() {
+    const { t } = useTranslation();
     const { ref, isInView, variants } = useScrollAnimation();
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -30,13 +32,10 @@ export default function CTASection() {
                 >
                     <div className='max-w-3xl mx-auto text-center'>
                         <h2 className='text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white via-blue-500 to-purple-500 bg-clip-text text-transparent font-display'>
-                            Ready to Start?
+                            {t('cta.title')}
                         </h2>
-                        <p className='text-xl text-gray-300 mb-12 leading-relaxed'>
-                            볼트랩과 함께라면 <br className='md:hidden' />
-                            당신의 아이디어가 현실이 됩니다.
-                            <br />
-                            지금 바로 무료 컨설팅을 받아보세요.
+                        <p className='text-xl text-gray-300 mb-12 leading-relaxed whitespace-pre-line'>
+                            {t('cta.description')}
                         </p>
                         <div className='flex justify-center'>
                             <Button
@@ -44,7 +43,7 @@ export default function CTASection() {
                                 className='bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-lg px-10 py-6 rounded-xl shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 transition-all duration-300 group'
                                 onClick={handleContactClick}
                             >
-                                프로젝트 의뢰하기
+                                {t('cta.button')}
                                 <ArrowRight className='ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform' />
                             </Button>
                         </div>

@@ -2,8 +2,10 @@ import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { ContactModal } from "@/components/ui/contact-modal";
+import { useTranslation } from "react-i18next";
 
 export function Navbar() {
+    const { t } = useTranslation();
     const location = useLocation();
     const isHomePage = location.pathname === "/";
     const [activeSection, setActiveSection] = useState("");
@@ -68,7 +70,7 @@ export function Navbar() {
                                                 activeSection === "services" ? "text-blue-400 font-semibold" : ""
                                             }`}
                                         >
-                                            Services
+                                            {t('navbar.services')}
                                         </button>
                                         <button
                                             onClick={() => scrollToSection("process")}
@@ -76,7 +78,7 @@ export function Navbar() {
                                                 activeSection === "process" ? "text-blue-400 font-semibold" : ""
                                             }`}
                                         >
-                                            Process
+                                            {t('navbar.process')}
                                         </button>
                                         <button
                                             onClick={() => scrollToSection("team")}
@@ -84,12 +86,12 @@ export function Navbar() {
                                                 activeSection === "team" ? "text-blue-400 font-semibold" : ""
                                             }`}
                                         >
-                                            Team
+                                            {t('navbar.team')}
                                         </button>
                                     </>
                                 ) : (
                                     <Link to='/' className='text-base text-gray-300 hover:text-white transition-colors'>
-                                        Home
+                                        {t('navbar.home')}
                                     </Link>
                                 )}
                                 <Link
@@ -98,14 +100,14 @@ export function Navbar() {
                                         location.pathname === "/portfolio" ? "text-blue-400 font-semibold" : ""
                                     }`}
                                 >
-                                    Portfolio
+                                    {t('navbar.portfolio')}
                                 </Link>
                             </div>
                             <Button
                                 className='bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-base px-6 py-4 rounded-xl shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 transition-all duration-300'
                                 onClick={handleContactClick}
                             >
-                                Contact
+                                {t('navbar.contact')}
                             </Button>
                         </div>
                     </div>

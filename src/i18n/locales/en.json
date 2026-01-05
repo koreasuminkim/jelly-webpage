@@ -1,0 +1,274 @@
+{
+  "hero": {
+    "badge": "Built by SNU Engineers",
+    "title": "Best Product,\nBest Price",
+    "subtitle": "IT Product Agency",
+    "description": "The best products at the best prices\nthrough AI AgentForce.\nNext-generation IT development agency\nBoltlab",
+    "contactButton": "Contact Us"
+  },
+  "navbar": {
+    "services": "Services",
+    "process": "Process",
+    "team": "Team",
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "cta": {
+    "title": "Ready to Start?",
+    "description": "With Boltlab,\nyour ideas become reality.\nGet a free consultation now.",
+    "button": "Request Project"
+  },
+  "services": {
+    "title": "What We Build?",
+    "subtitle": "We turn innovative business ideas\ninto reality",
+    "items": {
+      "landing": {
+        "title": "Home/Landing Page",
+        "description": "Delivering compelling brand experiences",
+        "price": "₩100,000~",
+        "features": ["Responsive Design", "Optimized Performance", "Modern UI/UX", "Analytics Tracking"]
+      },
+      "platform": {
+        "title": "Web Platform",
+        "description": "Scalable web service development",
+        "price": "₩400,000~",
+        "features": ["SaaS Platform", "E-commerce Solution", "Custom Web Service", "Real-time Data Processing"]
+      },
+      "mobile": {
+        "title": "Mobile App",
+        "description": "iOS/Android app development",
+        "price": "₩700,000~",
+        "features": ["Native App", "Cross-platform App", "Hybrid App", "PWA"]
+      },
+      "ai": {
+        "title": "AI Solution",
+        "description": "Artificial intelligence service integration",
+        "price": "₩1,000,000~",
+        "features": ["LLM Integration", "Machine Learning Models", "Data Analysis", "AI Workflow"]
+      }
+    },
+    "viewMore": "View More Portfolio"
+  },
+  "process": {
+    "title": "How We Work?",
+    "subtitle": "We complete successful projects\nwith systematic and efficient development processes",
+    "steps": {
+      "analysis": {
+        "title": "Product Analysis",
+        "description": "Understanding business goals and proposing optimal technology stacks."
+      },
+      "planning": {
+        "title": "Design & Planning",
+        "description": "Reviewing planning/design and optimizing development scope."
+      },
+      "development": {
+        "title": "Development & Launch",
+        "description": "Rapid development and quality management using AgentForce AI."
+      },
+      "quality": {
+        "title": "Quality Management",
+        "description": "Verifying stability through multi-faceted testing and performance optimization."
+      }
+    }
+  },
+  "target": {
+    "title": "Who We Serve?",
+    "subtitle": "We're looking for partners to grow with AgentForce",
+    "items": {
+      "startup": {
+        "title": "Startups",
+        "description": "Startups seeking rapid growth from MVP development to scale-up",
+        "features": ["Need for rapid MVP development", "Technology stack selection concerns", "Limited development resources", "Ideas requiring market validation"]
+      },
+      "enterprise": {
+        "title": "SMEs",
+        "description": "Growing companies needing new business project outsourcing",
+        "features": ["New business development projects", "Professional development team outsourcing", "Technology verification and adoption", "Project timeline compliance"]
+      },
+      "partner": {
+        "title": "Collaboration Partners",
+        "description": "Agencies needing premium IT solutions for their clients",
+        "features": ["Premium IT development collaboration", "Client project acquisition", "Stable technology partnership", "One-stop solution provision"]
+      }
+    }
+  },
+  "team": {
+    "title": "Why Trust Us?",
+    "subtitle": "Top experts with the highest level of\ndevelopment capabilities in Korea work together"
+  },
+  "hook": {
+    "title": "Development Costs in the AI Era",
+    "subtitle": "It's time for a change",
+    "achievements": {
+      "ai": {
+        "titlePrefix": "AI",
+        "titleSuffix": "Self-developed Automation System",
+        "description": "Boltlab has directly incorporated\nAI technological advances into outsourcing costs",
+        "stat": {
+          "unit": "%",
+          "label": "Development Efficiency Increase"
+        }
+      },
+      "speed": {
+        "titlePrefix": "3",
+        "titleSuffix": "Times Faster Development",
+        "description": "Projects across various fields\nincluding web/mobile apps and AI solutions",
+        "stats": [
+          {
+            "unit": "+",
+            "label": "Projects Completed"
+          },
+          {
+            "unit": "months",
+            "label": "Average Development Period"
+          }
+        ]
+      },
+      "cost": {
+        "titlePrefix": "3",
+        "titleSuffix": "Times Lower Cost",
+        "description": "Achieving customer satisfaction\nwith high quality and reasonable costs",
+        "stats": [
+          {
+            "unit": "%",
+            "label": "Customer Satisfaction"
+          },
+          {
+            "unit": "%",
+            "label": "Re-contract Rate"
+          }
+        ]
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Premium IT Product Development Agency",
+    "services": {
+      "title": "Services",
+      "items": {
+        "website": "Premium Website",
+        "platform": "Platform Development",
+        "ai": "AI Integration",
+        "consulting": "Consulting"
+      }
+    },
+    "company": {
+      "title": "Company",
+      "items": {
+        "about": "About Us",
+        "portfolio": "Portfolio",
+        "blog": "Blog",
+        "careers": "Careers"
+      }
+    },
+    "contact": {
+      "title": "Contact",
+      "address": "2F, 8 Sangdo-ro 55-gil, Dongjak-gu, Seoul",
+      "email": "suminjs@snu.ac.kr",
+      "businessNumber": "Business Number:",
+      "businessNumberValue": "333-14-02467"
+    },
+    "copyright": "© 2025 BOLTLAB. All rights reserved."
+  },
+  "portfolio": {
+    "backToHome": "Back to Home",
+    "title": "Boltlab Portfolio",
+    "description": "Introducing portfolios created by Boltlab.\nEach project is growing our clients' businesses.\nOur portfolio continues to grow.",
+    "visitSite": "Visit Site",
+    "privateProject": "Private Project",
+    "categories": {
+      "adMarket": "Ad Product Marketplace",
+      "community": "Large Community Site",
+      "internal": "Internal System",
+      "homepage": "Homepage",
+      "hybridApp": "Hybrid App Platform",
+      "webPlatform": "Web Platform",
+      "webApp": "Web App Platform",
+      "webPlatformPWA": "Web Platform & PWA"
+    },
+    "projects": {
+      "wepickup": {
+        "category": "adMarket",
+        "description": "Ad product marketplace.\nAI-powered ad product crawling automation\nCompany with 10 billion KRW annual revenue"
+      },
+      "muko": {
+        "category": "community",
+        "description": "Korean movie community site.\nCommunity, events, messages, attendance, notices, etc.\nApproximately 300K MAU"
+      },
+      "ctscompany": {
+        "category": "internal",
+        "description": "Car accident repair assessment internal system.\nAdmin appraiser management, assessment management, assessment input, attendance system"
+      },
+      "peterpet": {
+        "category": "homepage",
+        "description": "Pet cafe homepage.\nHomepage, reservation management, admin CMS system"
+      },
+      "blueclub": {
+        "category": "homepage",
+        "description": "Blue Club startup homepage.\nLanding page"
+      },
+      "studytapa": {
+        "category": "hybridApp",
+        "description": "Platform for CPA/CTA professional exam students.\nCommunity, chat, mentoring, study groups,\nlecture reviews, notifications, and integrated features"
+      },
+      "myquark": {
+        "category": "webPlatform",
+        "description": "Math problem bank and AI-based digital transformation platform.\nProblem bank cloud construction,\nPDF to HWP system construction"
+      },
+      "choonsim": {
+        "category": "webApp",
+        "description": "Cryptocurrency trading platform.\nReal-time price lookup, trading,\nchart viewing features"
+      },
+      "koso": {
+        "category": "webPlatform",
+        "description": "E-commerce powder market web platform"
+      },
+      "eden": {
+        "category": "webPlatform",
+        "description": "Avatar marketplace for\nvirtual YouTubers"
+      },
+      "dfp": {
+        "category": "webPlatformPWA",
+        "description": "Duty-free product crawling\nprice comparison service"
+      },
+      "apex": {
+        "category": "webPlatform",
+        "description": "English learning material sales platform"
+      },
+      "podcaster": {
+        "category": "webApp",
+        "description": "Podcast platform.\nAI podcast generation, streaming,\nsubscription features"
+      },
+      "reportable": {
+        "category": "webApp",
+        "description": "Report automation platform.\nData visualization, report generation,\nsharing and collaboration features"
+      },
+      "deepsol": {
+        "category": "webApp",
+        "description": "Math problem solving Q&A platform.\nInference model-based math problem solving system"
+      },
+      "outta": {
+        "category": "homepage",
+        "description": "Artificial intelligence organization introduction page"
+      },
+      "oneeighty": {
+        "category": "homepage",
+        "description": "Dating service website"
+      },
+      "bridgemarketing": {
+        "category": "homepage",
+        "description": "Marketing agency landing page"
+      },
+      "heartsolo": {
+        "category": "homepage",
+        "description": "Ski resort lesson + party product sales page"
+      },
+      "designation": {
+        "category": "homepage",
+        "description": "Design agency landing page"
+      }
+    }
+  }
+}
+

@@ -2,32 +2,34 @@ import { Card } from "@/components/ui/card";
 import { Code2, Lightbulb, Rocket, Settings } from "lucide-react";
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-
-const steps = [
-    {
-        icon: <Lightbulb className='h-8 w-8' />,
-        title: "프로덕트 분석",
-        description: "비즈니스 목표를 이해하고 최적의 기술 스택을 제안합니다.",
-    },
-    {
-        icon: <Code2 className='h-8 w-8' />,
-        title: "설계 및 기획",
-        description: "기획/디자인을 검토하고 개발 범위를 최적화합니다.",
-    },
-    {
-        icon: <Settings className='h-8 w-8' />,
-        title: "개발 및 출시",
-        description: "AgentForce AI를 활용한 신속한 개발과 품질 관리를 진행합니다.",
-    },
-    {
-        icon: <Rocket className='h-8 w-8' />,
-        title: "품질 관리",
-        description: "다각도 테스트와 성능 최적화를 통해 안정성을 검증합니다.",
-    },
-];
+import { useTranslation } from "react-i18next";
 
 export default function ProcessSection() {
+    const { t } = useTranslation();
     const { ref, isInView, variants, isMobile } = useScrollAnimation();
+    
+    const steps = [
+        {
+            icon: <Lightbulb className='h-8 w-8' />,
+            title: t('process.steps.analysis.title'),
+            description: t('process.steps.analysis.description'),
+        },
+        {
+            icon: <Code2 className='h-8 w-8' />,
+            title: t('process.steps.planning.title'),
+            description: t('process.steps.planning.description'),
+        },
+        {
+            icon: <Settings className='h-8 w-8' />,
+            title: t('process.steps.development.title'),
+            description: t('process.steps.development.description'),
+        },
+        {
+            icon: <Rocket className='h-8 w-8' />,
+            title: t('process.steps.quality.title'),
+            description: t('process.steps.quality.description'),
+        },
+    ];
     const itemVariants = {
         hidden: { opacity: 0, x: -20 },
         visible: (i: number) => ({
@@ -47,10 +49,9 @@ export default function ProcessSection() {
             {isMobile ? (
                 <div className='container mx-auto px-4 relative'>
                     <div className='text-center mb-10 md:mb-16'>
-                        <h2 className='text-2xl md:text-4xl font-bold mb-2 md:mb-4 text-white font-display mobile-heading'>How We Work?</h2>
-                        <p className='text-gray-400 text-sm md:text-lg mobile-text'>
-                            체계적이고 효율적인 개발 프로세스로 <br className='md:hidden' />
-                            성공적인 프로젝트를 완성합니다
+                        <h2 className='text-2xl md:text-4xl font-bold mb-2 md:mb-4 text-white font-display mobile-heading'>{t('process.title')}</h2>
+                        <p className='text-gray-400 text-sm md:text-lg mobile-text whitespace-pre-line'>
+                            {t('process.subtitle')}
                         </p>
                     </div>
                     <div className='relative'>
@@ -91,10 +92,9 @@ export default function ProcessSection() {
                     className='container mx-auto px-4 relative'
                 >
                     <div className='text-center mb-10 md:mb-16'>
-                        <h2 className='text-2xl md:text-4xl font-bold mb-2 md:mb-4 text-white font-display mobile-heading'>How We Work?</h2>
-                        <p className='text-gray-400 text-sm md:text-lg mobile-text'>
-                            체계적이고 효율적인 개발 프로세스로 <br className='md:hidden' />
-                            성공적인 프로젝트를 완성합니다
+                        <h2 className='text-2xl md:text-4xl font-bold mb-2 md:mb-4 text-white font-display mobile-heading'>{t('process.title')}</h2>
+                        <p className='text-gray-400 text-sm md:text-lg mobile-text whitespace-pre-line'>
+                            {t('process.subtitle')}
                         </p>
                     </div>
                     <div className='relative'>
